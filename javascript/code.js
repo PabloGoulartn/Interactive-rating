@@ -1,15 +1,17 @@
-let number;
+document.addEventListener('DOMContentLoaded', function(){
+    let userRating;
 
-function getRating(){
-    return number;
-}
+    function updateRating(button){
+        userRating = button.textContent;
+    }
 
-document.querySelectorAll('.rating-button').forEach(function(button) {
-    button.addEventListener('click', function(){
-        number = button.textContent;
+    document.querySelectorAll('.rating-button').forEach(function(button) {
+        button.addEventListener('click', function(){
+            updateRating(button);
+        })
     })
-})
 
-document.querySelector('.submit').addEventListener('click', function(){
-    alert(getRating());
+    document.querySelector('.submit').addEventListener('click', function(){
+        localStorage.setItem('userRating', getRating());
+    });
 });
