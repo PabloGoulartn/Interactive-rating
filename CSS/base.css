@@ -21,12 +21,22 @@ body{
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.t{
+.star-icon{
     width: 90%;
+}
+
+.star-image{
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252D37;
 }
 
 .feedback-description{
