@@ -16,8 +16,10 @@ body{
 }
 
 main{
-    width: 420px;
-    height: 420px;
+    max-width: 420px;
+    width: 100%;
+    max-height: 420px;
+    height: 100%;
     background: radial-gradient(circle at top, hsl(213, 19%, 18%), #121417);
     border-radius: 40px;
     text-align: center;
@@ -64,4 +66,38 @@ main{
     color: white;
     line-height: 25px;
     font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    main{
+        width: 90%;
+        height: 90%;
+    }
+
+    .rating-section{
+        height: 90px;
+        margin-top: 30px;
+    }
+
+    .thank-you-section{
+        width: 80%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1{
+        font-size: 18px;
+    }
+
+    .rating-section{
+        height: 90px;
+        margin-top: 20px;
+    }
+
+    .thank-you-section{
+        width: 80%;
+        height: 210px;
+    }
+
 }
